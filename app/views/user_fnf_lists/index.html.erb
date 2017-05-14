@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Fnf Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phone no</th>
+      <th>Fnf phone no</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_fnf_lists.each do |user_fnf_list| %>
+      <tr>
+        <td><%= user_fnf_list.phone_no %></td>
+        <td><%= user_fnf_list.fnf_phone_no %></td>
+        <td><%= link_to 'Show', user_fnf_list %></td>
+        <td><%= link_to 'Edit', edit_user_fnf_list_path(user_fnf_list) %></td>
+        <td><%= link_to 'Destroy', user_fnf_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User Fnf List', new_user_fnf_list_path %>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fn Fs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>No of fnf</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fn_fs.each do |fn_f| %>
+      <tr>
+        <td><%= fn_f.no_of_fnf %></td>
+        <td><%= link_to 'Show', fn_f %></td>
+        <td><%= link_to 'Edit', edit_fn_f_path(fn_f) %></td>
+        <td><%= link_to 'Destroy', fn_f, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fn F', new_fn_f_path %>

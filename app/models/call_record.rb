@@ -1,0 +1,2 @@
+class CallRecord < ApplicationRecord
+end

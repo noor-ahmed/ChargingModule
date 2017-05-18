@@ -1,0 +1,2 @@
+module UserFnfListsHelper
+end

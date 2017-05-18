@@ -1,0 +1,2 @@
+class UserFnfList < ApplicationRecord
+end
